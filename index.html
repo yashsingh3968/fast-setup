@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>YK Cloning</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- HERO / INTRO -->
+<section id="hero">
+  <h1 id="heroText">YK CLONING</h1>
+</section>
+
+<!-- MAIN SYSTEM DASHBOARD -->
+<section id="system">
+
+  <!-- LEFT COLUMN -->
+  <div class="column left">
+
+    <div class="system-panel">
+      <div class="panel-header">UPLOAD VOICE</div>
+      <input type="file" id="audioUpload" accept="audio/*" />
+    </div>
+
+    <div class="system-panel">
+      <div class="panel-header">AUDIO STATUS</div>
+      <p id="fileStatus">No file uploaded</p>
+    </div>
+
+  </div>
+
+  <!-- CENTER COLUMN -->
+  <div class="column center">
+
+    <div class="system-panel main-panel">
+      <div class="panel-header">TEXT INPUT</div>
+      <textarea placeholder="Type text in selected language..."></textarea>
+    </div>
+
+    <div class="system-panel">
+      <div class="panel-header">LANGUAGE</div>
+      <select>
+        <option value="">Select language</option>
+        <option>English</option>
+        <option>Hindi</option>
+        <option>Marathi</option>
+      </select>
+    </div>
+
+  </div>
+
+  <!-- RIGHT COLUMN -->
+  <div class="column right">
+
+    <div class="system-panel tiny-panel themes">
+      <button onclick="setTheme('blue')">🔵</button>
+      <button onclick="setTheme('purple')">🟣</button>
+      <button onclick="setTheme('dark')">🌙</button>
+      <button onclick="setTheme('light')">☀️</button>
+    </div>
+
+    <div class="system-panel">
+      <div class="panel-header">OUTPUT</div>
+      <audio controls></audio>
+      <div class="actions">
+        <button>Download</button>
+        <button>Share</button>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
